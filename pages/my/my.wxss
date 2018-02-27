@@ -1,0 +1,28 @@
+/* pages/my/my.wxss */
+navigator{
+  width: 700rpx;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.pic{
+  width: 120px;
+  height: 80px;
+  background-size: cover;
+}
+.desc{
+  width: 550rpx;
+  box-sizing: border-box;
+  margin-left: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #edede6;
+}
+.name{
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+.mate{
+  font-size: 12px;
+  margin-right: 5px;
+}

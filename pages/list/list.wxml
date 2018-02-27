@@ -1,0 +1,7 @@
+<!--pages/list/list.wxml-->
+<view class='box'>
+  <navigator url='/pages/detail/detail?href={{item.href}}' wx:for="{{list}}" wx:key="{{index}}">
+    <view class='imgbox' style='background-image:url("{{item.src}}")'></view>
+    <view class='name'>{{item.name}}</view>
+  </navigator>
+</view>

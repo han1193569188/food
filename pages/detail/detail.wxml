@@ -1,0 +1,35 @@
+<!--pages/details/detail.wxml-->
+<view class='box'>
+  <view class='imgbox' style='background-image:url({{obj.src}})'>
+    <view class='likebox' bindtap='{{click}}' data-name="{{obj.name}}" 
+    data-mate='{{obj.mate}}' data-pic='{{obj.src}}' data-href='{{obj.href}}'>
+      <text class='like' wx:if="{{icon}}" style='background-image:url("data:image/png;base64,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")'></text>
+      <text class='like' wx:else style='background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABRCAYAAACqj0o2AAAEAElEQVR4Xu2c4XHUMBCF31YAVABUAKmAUAGhAkIFhAoIFQAVkFQAVACpgKQCoAKSCsS8GZnxeHxnWXo67521f3wzZ6+lT09eWbt3hmbFBKzYQ3OABlEgggaxQRQQELhoSmwQBQQELpoSG0QBAYELt0oMITwC8A4Aj78BvDczHt2ZS4ghhPsAfgHgsbNbAI/NjEdX5hXiBYBXI6QuzezUFUHA3xtLnMZU4SajGl1Na3dKDCFsUmEH1Z0aXUFMUGEH0pUavUGcUqFLNbqBOEOF7tToCWKqCt2p0QXEDBW6UqMXiHNV6EqNi0MsUKEbNXqAmKtCN2pcFKJAhS7UuDTEUhW6UONiEIUqXFyNS0JUqXBxNS4CsYIKF1XjUhDVKlxUjVUhhhCexd3pp3Gbn1v9/NzfsVbvsXLn+zqmFLjvyM+3ZnalvlHnrxhiCIFQ7gE43iGoXB5DwD8A3JkZQWdbEsSY83gSQVFFfWVl39zZhVTtf+UCIOCblJzOJMQQAnMan511eJfNeW1mfIZvtK0QQwicot932WKn93puZlTmqE1BPI+5X6d921mzmPMmiwaxAHkRRC5JGLkYfddqdwyk29K0KYHlBMCXtRIE8NLMvmYHlu7CuBbkg3VNiqQCj1PWkJNKXCnIZIDkkwyRJ69EkbMAzoa4ApCzAWZBPGCQWQCzIR4gyGyARRB7IBn+H+7xEugPgJOUKJz1xpICJu7wcPnDXZ59s5u4jCmqvp0VnTcR2lOQEoDF07kPdc9AygBKIcZnJDdsvU9tKUA5xD0AKQdYBWIP5F+HUeZBynb/3HZLAsvwpvH52CDOHY1BkPGaVti6zZ/b51pKPAPwIbdRFa97a2Yf1f5rQWRD36gbK/D3ycw4wFKrBZHLHFY/eLMrM+OjRmq1IAZpK4XOzEzeZ7nDihVfKpTyX2PVgOg1MneDII/QNSB6T/hvzSHnyL0GxFq1hzn9G7tG/ivVGhB/xqoxVafVfq7N7EjptAZEt5G5A6eO0FKIMaVKJSqNFa7qNedRSTpg2Dk1RGXJySWAc9bAxGUTA9bY/0LkDNhkacgcp2qIishM5Z2NKSUqna+UpcqURmg1RGb+XswZxd65hEflbSym7M6NxaccsFyY38yMs0Ziaoj8FxGW482xZHhDpwUwpRFaDXFOZGa+9zRFeVMjEmFyfZqc/1ZG6CUgEh6n7dZi8ilwY9/HIn1O8xSYsgithsgk+KYaxmrwRqY5f/GwFaZnJY5FZ9a5MNrKlTel1qhMRvPhwEo3Z6VKZKdiw7v/82K0vqiRYZsC2IvkzIWzPV00ZnukAyqHmNq5QzqvQRSMZoPYIAoICFw0JTaIAgICF02JDaKAgMBFU6IA4j9y+4xhR2MfmAAAAABJRU5ErkJggg==")'></text><text>{{col}}         </text>
+    </view>
+  </view>
+  <view class='name'>{{obj.name}}</view>
+  <view class='main'>
+    <view class="det">制作详解
+    </view>
+    <view class='desc'>
+      <view class='dif' wx:if="{{obj.dif}}"><text>难度：</text>{{obj.dif}}</view>
+      <view class='time' wx:if="{{obj.time}}"><text>时间:</text>{{obj.time}}</view>
+    </view>
+    <view class='mate'>材料</view>
+    <view class='matebox'>
+      <view class='mates' wx:for="{{obj.mate}}" wx:key="{{index}}"><text>{{item.use}}</text>{{item.raw}}</view>
+    </view>
+    <view class='mate'>做法步骤</view>
+    <view class='step' wx:for="{{obj.step}}" wx:key="{{index}}">
+      <view class='stepimg' wx:if="{{item.pic}}">
+        <image src='{{item.pic}}'></image>          
+      </view>
+      <view class='stepcon' wx:if="{{item.pic}}">{{item.content}}</view>
+      <view class='stepcons' wx:else>{{item.content}}</view>
+    </view>
+  </view>
+  <view class='tipsbox' wx:if="{{obj.tips}}">
+    <view class='tip' wx:if="{{obj.tips}}">小贴士</view>
+    <view class='tips'>{{obj.tips}}</view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+
+<view class='box'>
+  <navigator url='/pages/detail/detail?href={{item.href}}' class='imgbox' wx:for="{{arr}}" wx:key="{{index}}">
+    <view class='img' 
+          style='background-image:url("{{item.src}}")'>
+    </view>
+    <view class='name'>{{item.name}}</view>
+  </navigator>
+</view>

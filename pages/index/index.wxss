@@ -1,0 +1,30 @@
+/* pages/index/index.wxss */
+page{
+  background: #f8f8f7;
+}
+.box{
+  width: 700rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.imgbox{
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(34,25,25,0.1);
+}
+.img{
+  width: 680rpx;
+  height: 400rpx;
+  background-size: cover;
+}
+.name{
+  text-align: center;
+  font-size: 14px;
+  width: 95%;
+  margin: 5px auto 0;
+  color: #001403;
+}

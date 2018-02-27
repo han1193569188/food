@@ -1,0 +1,20 @@
+/* pages/classify/classify.wxss */
+.box{
+  width: 700rpx;
+  margin: 15px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.listbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+navigator{
+  margin-right: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+}

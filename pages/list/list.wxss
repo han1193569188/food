@@ -1,0 +1,35 @@
+/* pages/list/list.wxss */
+page{
+  background: #eee;
+}
+.box{
+  width: 720rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+navigator{
+  margin-top: 20px;
+  width: 340rpx;
+  box-sizing: border-box;
+  padding:15px 15px 5px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(34,25,25,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.imgbox{
+  width: 120px;
+  height: 80px;
+  margin: 0 auto;
+  background-size: cover;
+}
+.name{
+  font-size: 12px;
+  text-align: center;
+  margin: 5px auto 0;
+}

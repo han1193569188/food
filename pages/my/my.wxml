@@ -1,0 +1,9 @@
+<!--pages/my/my.wxml-->
+<navigator url='/pages/detail/detail?href={{item.href}}' 
+           wx:for="{{list}}" wx:key="{{index}}">
+  <view class='pic' style='background-image:url("{{item.pic}}")'></view>
+  <view class='desc'>
+    <view class='name'>{{item.name}}</view>
+    <text class='mate' wx:for="{{item.mate}}" wx:key="{index}" wx:if="{{index<5}}">{{item.use}}</text>
+  </view>
+</navigator>

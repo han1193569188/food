@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/list/list"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F77B00",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#F77B00",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "utils/images/index.png",
+        "selectedIconPath": "utils/images/index2.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "utils/images/classify.png",
+        "selectedIconPath": "utils/images/classify2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "utils/images/my.png",
+        "selectedIconPath": "utils/images/my2.png"
+      }
+    ]
+  }
+}

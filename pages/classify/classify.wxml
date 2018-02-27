@@ -1,0 +1,11 @@
+<!--pages/classify/classify.wxml-->
+<view class='box' wx:for="{{arr}}" wx:key="{{index}}">
+  <view class='title'>{{item.title}}</view>
+  <view class='listbox'>
+    <navigator 
+              url='/pages/list/list?url={{item.url}}' 
+              wx:for="{{item.content}}" 
+              wx:key="{{index}}">{{item.name}}
+    </navigator>
+  </view>
+</view>
